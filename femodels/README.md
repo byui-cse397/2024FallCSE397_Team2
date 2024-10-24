@@ -1,0 +1,13 @@
+# Frontend Models
+
+## Purpose
+This section manages the data models associated with the frontend of the Department Portfolio Website. These models will define the structures for data associated with student projects, internships, and other relevant categories.
+
+## Features
+- Define the schema for individual projects, internships, and activities.
+- Handle data formatting from the backend API for display in the views.
+- Ensure data validation before sending requests to the server.
+
+## User Needs Addressed
+- Ensure users see up-to-date and relevant information about the department's offerings.
+- Provide a standardized format for displaying different project types and experiences.
