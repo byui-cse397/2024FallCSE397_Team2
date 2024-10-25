@@ -34,9 +34,9 @@ jobs:
           echo "No Markdown files changed or added in the specified directory."
           exit 0
         fi
-        mkdir -p Backend/HTML_files
+        mkdir -p Backend/HTML_file_destination
         for file in $CHANGED_FILES; do
-          html_file="Backend/HTML_files/${file%.md}.html"
+          html_file="Backend/HTML_file_destination/${file%.md}.html"
           pandoc "$file" -o "$html_file"
           python Backend/MD_to_HTML_Conversion/wrap_in_divs.py "$html_file"
         done
@@ -45,6 +45,6 @@ jobs:
       run: |
         git config --global user.name 'GitHub Action'
         git config --global user.email 'action@github.com'
-        git add Backend/HTML_files/
+        git add Backend/HTML_file_destination/
         git commit -m "Automated: Convert Markdown to HTML"
         git push
