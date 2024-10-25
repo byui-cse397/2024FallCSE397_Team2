@@ -46,3 +46,10 @@ jobs:
           # Post-process HTML for divs
           python Backend/MD_to_HTML_Conversion/wrap_in_divs.py "$html_file"
         done
+        
+    - name: Deploy to GitHub Pages
+      if: success()
+      uses: peaceiris/actions-gh-pages@v4
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: Backend/HTML_file_destination/
