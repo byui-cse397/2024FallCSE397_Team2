@@ -38,9 +38,22 @@ jobs:
         fi
         mkdir -p Backend/HTML_file_destination
         for file in $CHANGED_FILES; do
-          html_file="Backend/HTML_file_destination/${file%.md}.html"
-          pandoc "$file" -o "$html_file"
-          python Backend/MD_to_HTML_Conversion/wrap_in_divs.py "$html_file"
+          echo "Processing $file"
+          # Extract just the filename without path for the output
+          filename=$(basename "$file")
+          html_file="Backend/HTML_file_destination/${filename%.md}.html"
+          if pandoc "$file" -o "$html_file"; then
+            echo "Converted $file to $html_file"
+            if python Backend/MD_to_HTML_Conversion/wrap_in_divs.py "$html_file"; then
+              echo "Post-processed $html_file"
+            else
+              echo "Failed to post-process $html_file"
+              exit 1
+            fi
+          else
+            echo "Failed to convert $file to HTML"
+            exit 1
+          fi
         done
 
     - name: Commit and push changes
