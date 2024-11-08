@@ -14,6 +14,11 @@ def modify_html_structure(html_file_path):
         # Find the main content block assuming it could be the body or a wrapping div
         main_content = soup.body or soup.find('div', class_='markdown-body') or soup
         
+        # Specifically remove the "Additional Information" H2
+        additional_info_h2 = soup.find('h2', id='additional-information')
+        if additional_info_h2:
+            additional_info_h2.decompose()  # Remove the h2 element and its contents
+
         # Replace generic divs with semantic tags
         for div in main_content.find_all('div'):
             if div.h2 or div.h3:
