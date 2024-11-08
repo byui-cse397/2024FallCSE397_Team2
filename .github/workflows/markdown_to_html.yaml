@@ -46,7 +46,7 @@ jobs:
           html_file="Backend/HTML_file_destination/${filename%.md}.html"
           if pandoc "$file" -o "$html_file"; then
             echo "Converted $file to $html_file"
-            if python Backend/MD_to_HTML_Conversion/wrap_in_divs.py "$html_file"; then
+            if python Backend/MD_to_HTML_Conversion/modify_html_structure.py "$html_file"; then
               echo "Post-processed $html_file"
             else
               echo "Failed to post-process $html_file"
