@@ -17,6 +17,7 @@ def modify_html_structure(html_file_path):
         # Specifically remove the "Additional Information" H2
         additional_info_h2 = soup.find('h2', id='additional-information')
         if additional_info_h2:
+            additional_info_h2.clear()  # Clear the contents of H2
             additional_info_h2.decompose()  # Remove the h2 element and its contents
 
         # Replace generic divs with semantic tags
