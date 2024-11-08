@@ -62,8 +62,3 @@
 - **Acknowledgments:**  
   List any individuals, resources, or additional support that assisted you in the completion of your project.
 
-
-
-
-
-Note this line is added to test if editing this md file will trigger my github action
