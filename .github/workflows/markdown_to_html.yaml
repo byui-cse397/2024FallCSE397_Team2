@@ -4,6 +4,8 @@ on:
   push:
     paths:
       - 'Backend/Student_Project_Submissions/**.md'
+permissions:
+    contents: write  # This code can write to repository contents
 
 jobs:
   convert_md:
