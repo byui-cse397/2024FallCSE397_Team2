@@ -1,0 +1,234 @@
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Header Styles */
+header {
+    background-color: #002855; /* Dark blue to reflect university colors */
+    color: #ffffff;
+    padding: 1rem;
+    text-align: center;
+    background-image: url('BYUI.jpeg'); /* Add background image */
+    background-size: cover; /* Ensures the image covers the entire header */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
+    header h1 {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    header nav ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+        header nav ul li {
+            display: inline;
+            margin: 0 1rem;
+        }
+
+            header nav ul li a {
+                color: #ffffff;
+                text-decoration: none;
+                font-weight: bold;
+            }
+
+                header nav ul li a:hover {
+                    text-decoration: underline;
+                }
+
+/* Main Content Styles */
+main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+    main h2 {
+        color: #002855; /* Consistent dark blue theme */
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+
+/* Section Styles */
+section {
+    margin-bottom: 2rem;
+}
+
+    section ul {
+        list-style-type: disc;
+        margin-left: 2rem;
+    }
+
+    section p,
+    section ul {
+        font-size: 1rem;
+        line-height: 1.8;
+        color: #333;
+    }
+
+/* Footer Styles */
+footer {
+    background-color: #002855;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9rem;
+}
+
+/* Link Styles */
+a {
+    color: #0056b3; /* A lighter shade of blue */
+    text-decoration: none;
+}
+
+    a:hover {
+        text-decoration: underline;
+        color: #003366; /* Slightly darker blue for hover */
+    }
+
+/* Responsive Navigation */
+@media (max-width: 768px) {
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+        header nav ul li {
+            margin: 0.5rem 0;
+        }
+}
+
+/* Table Styles for organized layout on specific pages */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+    table th,
+    table td {
+        padding: 0.8rem;
+        border: 1px solid #ddd;
+        text-align: left;
+    }
+
+    table th {
+        background-color: #002855;
+        color: #ffffff;
+    }
+
+    table tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+/* Button Styles */
+button {
+    background-color: #0056b3;
+    color: #ffffff;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+    button:hover {
+        background-color: #003366;
+    }
+
+/* Image Styles */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+/* Responsive Images */
+@media (max-width: 600px) {
+    img {
+        width: 100%;
+    }
+}
+
+/* Card Style for Project Showcase */
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: #ffffff;
+    margin-bottom: 1.5rem;
+}
+
+    .card h3 {
+        background-color: #002855;
+        color: #ffffff;
+        padding: 0.5rem;
+        text-align: center;
+    }
+
+    .card p {
+        padding: 1rem;
+    }
+
+/* Styling Lists of Achievements and Experiences */
+.achievements,
+.experience {
+    padding: 0;
+    list-style-type: square;
+    margin-left: 1.5rem;
+}
+
+    .achievements li,
+    .experience li {
+        margin-bottom: 0.5rem;
+    }
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1024px) {
+    main {
+        padding: 1.5rem;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    footer {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 1rem;
+    }
+
+    header h1 {
+        font-size: 1.6rem;
+    }
+
+    header nav ul li {
+        margin: 0.3rem 0;
+    }
+}
