@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Internships - BYU Idaho</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Internships and Success Stories</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="advising.html">Advising</a></li>
+        <li><a href="internships.html">Internships</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>Internship Opportunities</h2>
+      <p>Gain hands-on experience with leading companies through internships that bridge academic knowledge with practical skills.</p>
+      <ul>
+        <li>Company 1: Engineering Intern at XYZ Corp.</li>
+        <li>Company 2: Civil Engineering Intern at ABC Enterprises</li>
+        <li>Company 3: Mechanical Engineering Intern at DEF Industries</li>
+        <!-- Add more internship opportunities as needed -->
+      </ul>
+      <h2>Success Stories</h2>
+      <p>Learn from our alumni who have achieved success in the industry.</p>
+      <ul>
+        <li>Alumni 1: John Doe - Senior Engineer at XYZ Corp.</li>
+        <li>Alumni 2: Jane Smith - Project Manager at ABC Enterprises</li>
+        <!-- Add more success stories as needed -->
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2023 BYU Idaho Mechanical and Civil Engineering Department</p>
+  </footer>
+</body>
+</html>
