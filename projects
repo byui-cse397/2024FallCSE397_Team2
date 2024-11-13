@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects - BYU Idaho</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Student Projects Showcase</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="advising.html">Advising</a></li>
+        <li><a href="internships.html">Internships</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>Our Student Projects</h2>
+      <p>Explore innovative projects by our students in the Mechanical and Civil Engineering Department.</p>
+      <ul>
+        <li>Project 1: Autonomous Vehicle Design</li>
+        <li>Project 2: Sustainable Water Management</li>
+        <li>Project 3: Structural Analysis Simulation</li>
+        <!-- Add more projects as needed -->
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2023 BYU Idaho Mechanical and Civil Engineering Department</p>
+  </footer>
+</body>
+</html>
