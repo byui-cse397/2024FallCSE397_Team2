@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Advising - BYU Idaho</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Advising Information</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="advising.html">Advising</a></li>
+        <li><a href="internships.html">Internships</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>Academic Advising</h2>
+      <p>Our advisors are here to help you succeed in your academic journey. Schedule an appointment to discuss course planning, career guidance, and more.</p>
+      <h3>Advisors Contact Information:</h3>
+      <ul>
+<<<<<<< HEAD
+        <li>Dr. Jane Doe - Professional Project Department Advisor - jane.doe@byui.edu</li>
+        <li>Dr. John Smith - Professional Project Advisor - john.smith@byui.edu</li>
+=======
+        <li>Dr. Jane Doe - Mechanical Engineering Advisor - jane.doe@byui.edu</li>
+        <li>Dr. John Smith - Civil Engineering Advisor - john.smith@byui.edu</li>
+>>>>>>> f341c837b905055660751f49aca624440fde963a
+        <!-- Add more advisors as needed -->
+      </ul>
+    </section>
+  </main>
+  <footer>
+<<<<<<< HEAD
+    <p>&copy; 2023 BYU Idaho Professional Project Department</p>
+=======
+    <p>&copy; 2023 BYU Idaho Mechanical and Civil Engineering Department</p>
+>>>>>>> f341c837b905055660751f49aca624440fde963a
+  </footer>
+</body>
+</html>
