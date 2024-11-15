@@ -12,11 +12,11 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+
+  
   <header>
-
-    <h1>Welcome to BYU Idaho's Professional Project Department Portfolio </h1>
-
-
+    <img src="C:\Users\erosp\OneDrive\Desktop\Project 2\BYUI.jpeg" alt="BYU-Idaho Campus">
+    <h1>Welcome to BYU-Idaho's Department of Professional Projects</h1>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -30,15 +30,150 @@
   <main>
     <section>
       <h2>About Our Department</h2>
+      <p>Explore our programs, projects, and opportunities in the Department of Professional Projects.</p>
+    </section>
+    <section>
+      <h2>Featured Projects</h2>
+      <div class="projects-container">
+        <div class="card">
+          <h3>Party of AI</h3>
+          <img src="C:\Users\erosp\OneDrive\Desktop\Project 2\PAI.jpg" alt="Party of AI">
+          <p>The Party of Artificial Intelligence is a pioneering initiative...</p>
+          <a href="#" class="learn-more" onclick="toggleDetails(event, 'details1')">Learn More</a>
+          <div id="details1" class="details" style="display: none;">
+            <p>
+              Key Issues Addressed:
+              <br>1. Affordable Housing: Expanding affordable housing options...
+              <br>2. Public Safety: Enhancing police presence...
+              <br>3. Public Transit Improvement: Upgrading transit safety...
+              <br>4. Economic Revitalization: Incentivizing downtown businesses...
+              <br>5. Political Engagement and Unity: Promoting inclusive governance...
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Idaho Museums</h3>
+          <img src="C:\Users\erosp\OneDrive\Desktop\Project 2\Idaho museums.jpeg" alt="Idaho Museums">
+          <p>The Idaho State Museum in Boise offers immersive exhibits that showcase the state's rich history and diverse cultures. Spanning over 80,000 square feet, the museum features more than 500 artifacts combined with innovative technology to tell the story of Idaho. 
+            IDAHO STATE HISTORICAL SOCIETY
+            
+            The Museum of Idaho in Idaho Falls presents both permanent and traveling exhibits on regional history and science. Notable displays include the "Way Out West" exhibit, which explores Idaho's past from the Ice Age to the present day. 
+            MUSEUM OF IDAHO
+            
+            The Warhawk Air Museum in Nampa is dedicated to preserving military aviation history. Its collection includes aircraft from various eras, such as the Curtiss P-40E Kittyhawk and the North American P-51C Mustang. 
+            </p>
+            <a href="#" class="learn-more" onclick="toggleDetails(event, 'details2')">Learn More</a>
+            <div id="details2" class="details" style="display: none;">
+              <p>The Central Idaho Historical Museum in McCall focuses on preserving the region's heritage. Current projects include the restoration of historic log structures, with support from the Idaho Heritage Trust. 
+                CHILDRENS INST. FOR HISTORIC PRES.
+                
+                The Museum of North Idaho in Coeur d'Alene is planning a significant expansion to accommodate its growing collection and better serve the community. The project has received substantial pledges, including $700,000 from ignite cda. 
+                MUSEUM NI
+                
+                The Idaho Heritage Trust provides grants and technical assistance to preservationists across the state, ensuring that Idaho's cultural legacy is maintained for future generations. 
+                IDAHO HERITAGE TRUST
+                
+                These institutions and projects collectively contribute to preserving and showcasing Idaho's rich cultural and historical heritage.
+              </p>
+            </div>
+              
+        <!-- Additional project cards -->
+      </div>
+    </section>
+    
+    <section>
+      <h2>Stay Updated with Our Events</h2>
+      <p>Check back regularly to see upcoming events.</p>
+    </section>
+  
+    <section class="grid-container">
+      <!-- Example Event Card -->
+      <div class="card">
+        <img src="C:\Users\erosp\OneDrive\Desktop\Project 2\Janalee.webp" alt="Event 1 Image" />
+        <div class="card-content">
+          <h3>Title: Devotional - Janalee Meeker</h3>
+          <p>Description: Join us for an interactive devotional.</p>
+          <p>Date: November 19, 2023</p>
+          <p>Time: 11:30 AM - 12:05 PM</p>
+        </div>
+      </div>
+  
+      <div class="card">
+        <img src="C:\Users\erosp\OneDrive\Desktop\Project 2\devotional.webp" alt="Event 2 Image" />
+        <div class="card-content">
+          <h3>Title: Data Science Seminar</h3>
+          <p>Description: An informative seminar on data science trends and technologies.</p>
+          <p>Date: November 25, 2023</p>
+          <p>Time: 1:00 PM - 4:00 PM</p>
+        </div>
+      </div>
+  
+      <div class="card">
+        <img src="C:\Users\erosp\OneDrive\Desktop\Project 2\volleyball.webp" alt="Event 3 Image" />
+        <div class="card-content">
+          <h3>Title: Networking Event</h3>
+          <p>Description: Meet industry professionals and expand your network.</p>
+          <p>Date: December 5, 2023</p>
+          <p>Time: 5:00 PM - 7:00 PM</p>
+        </div>
+      </div>
+    </section>
 
-      <p>Explore our programs, projects, and opportunities in the Professional Project Department.</p>
 
-      
 
+
+    <section>
+      <h2>Academic Advising</h2>
+      <p>For guidance on course selection and career planning, please contact:</p>
+      <ul class="advisors-list">
+        <li>
+          <strong>Advisor Name 1</strong><br>
+          Email: <a href="mailto:advisor1@example.com">advisor1@example.com</a><br>
+          Phone: (208) 496-XXXX<br>
+          Office: Austin Building, Room 106
+        </li>
+        <li>
+          <strong>Advisor Name 2</strong><br>
+          Email: <a href="mailto:advisor2@example.com">advisor2@example.com</a><br>
+          Phone: (208) 496-XXXX<br>
+          Office: Smith Building, Room 202
+        </li>
+        <!-- Additional advisors -->
+      </ul>
+    </section>
+    <section>
+      <h2>Internship Opportunities</h2>
+      <div class="grid-container">
+        <div class="card">
+          <h3>Internship Title 1</h3>
+          <img src="images/internship1.jpg" alt="Internship 1 Image">
+          <p>Brief description of Internship 1...</p>
+          <a href="internship1-details.html">Learn More</a>
+        </div>
+        <div class="card">
+          <h3>Internship Title 2</h3>
+          <img src="images/internship2.jpg" alt="Internship 2 Image">
+          <p>Brief description of Internship 2...</p>
+          <a href="internship2-details.html">Learn More</a>
+        </div>
+        <!-- Additional internship cards -->
+      </div>
     </section>
   </main>
   <footer>
-    <p>&copy; 2023 BYU Idaho</p>
+    <p>&copy; 2024 BYU-Idaho</p>
   </footer>
+  <script>
+    function toggleDetails(event, id) {
+      event.preventDefault();
+      var details = document.getElementById(id);
+      if (details.style.display === "none") {
+        details.style.display = "block";
+      } else {
+        details.style.display = "none";
+      }
+    }
+    </script>
+     
 </body>
 </html>
