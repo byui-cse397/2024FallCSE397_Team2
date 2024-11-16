@@ -66,7 +66,8 @@ section {
 }
 
 h2 {
-  color: #002855;
+  /* color: #002855; */
+  color:white;
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
@@ -175,3 +176,16 @@ footer p {
   margin: 0;
   font-size: 0.9rem;
 }
+
+
+.banner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height:500px;
+  background-image: url(../assets/vadim-sherbakov-d6ebY-faOO0-unsplash.jpg);
+  background-size: cover;
+}
+
+

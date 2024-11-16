@@ -1,30 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-
   <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-=======
-
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>BYU Idaho Professional Project Department Portfolio</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
-<body>
 
-  
+<body>
   <header>
-    <img src="https://github.com/erospereira/Professional-Project-Department-Portfolio/blob/main/BYUI.jpeg?raw=true">
-    <h1>Welcome to BYU-Idaho's Department of Professional Projects</h1>
+    <div class="banner">
+      <h1>Welcome to BYU-Idaho's Department of Professional Projects</h1>
+      <h2>Your gateway to Senior Projects, Internships, Portfolios, and more.</h2>
+    </div>
+    
+    
     <nav>
+
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="events.html">Events</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="advising.html">Advising</a></li>
-        <li><a href="internships.html">Internships</a></li>
+        <li><a href="/pages/projects.html">Senior Projects</a></li>
+        <li><a href="/pages/internships.html">Internships</a></li>
+        <li><a href="/pages/portfolio.html">Faculty Portfolios</a></li>
+        <li><a href="/pages/societies.html">Societies</a></li>
+        <li><a href="/pages/event.html">Events</a></li>
+        <li><a href="/pages/advising.html">Advising</a></li>
+        <li><a href="/pages/department.html" target="_blank">CSE Department</a></li>
       </ul>
+
     </nav>
   </header>
   <main>
@@ -32,12 +36,25 @@
       <h2>About Our Department</h2>
       <p>Explore our programs, projects, and opportunities in the Department of Professional Projects.</p>
     </section>
+    <section id="overview">
+      <h2>Explore</h2>
+      <p>Navigate through our key focus areas:</p>
+      <ul>
+        <li><strong>Senior Projects</strong>: Collaborate and innovate on capstone projects.</li>
+        <li><strong>Internships</strong>: Gain real-world experience in tech industries.</li>
+        <li><strong>Faculty Portfolios</strong>: Meet our talented and experienced faculty.</li>
+        <li><strong>Societies</strong>: Engage with CSE communities and grow your network.</li>
+        <li><strong>Hackathons</strong>: Challenge yourself and showcase your skills.</li>
+        <li><strong>Advising</strong>: Receive guidance tailored to your academic and career goals.</li>
+      </ul>
+    </section>
     <section>
       <h2>Featured Projects</h2>
       <div class="projects-container">
         <div class="card">
           <h3>Party of AI</h3>
-          <img src="https://github.com/erospereira/Professional-Project-Department-Portfolio/blob/main/PAI.jpg?raw=true">
+          <img
+            src="https://github.com/erospereira/Professional-Project-Department-Portfolio/blob/main/PAI.jpg?raw=true">
           <p>The Party of Artificial Intelligence is a pioneering initiative...</p>
           <a href="#" class="learn-more" onclick="toggleDetails(event, 'details1')">Learn More</a>
           <div id="details1" class="details" style="display: none;">
@@ -53,43 +70,56 @@
         </div>
         <div class="card">
           <h3>Idaho Museums</h3>
-          <img src="https://github.com/erospereira/Professional-Project-Department-Portfolio/blob/main/Idaho%20museums.jpeg?raw=true">
-          <p>The Idaho State Museum in Boise offers immersive exhibits that showcase the state's rich history and diverse cultures. Spanning over 80,000 square feet, the museum features more than 500 artifacts combined with innovative technology to tell the story of Idaho. 
+          <img
+            src="https://github.com/erospereira/Professional-Project-Department-Portfolio/blob/main/Idaho%20museums.jpeg?raw=true">
+          <p>The Idaho State Museum in Boise offers immersive exhibits that showcase the state's rich history and
+            diverse cultures. Spanning over 80,000 square feet, the museum features more than 500 artifacts combined
+            with innovative technology to tell the story of Idaho.
             IDAHO STATE HISTORICAL SOCIETY
-            
-            The Museum of Idaho in Idaho Falls presents both permanent and traveling exhibits on regional history and science. Notable displays include the "Way Out West" exhibit, which explores Idaho's past from the Ice Age to the present day. 
+
+            The Museum of Idaho in Idaho Falls presents both permanent and traveling exhibits on regional history and
+            science. Notable displays include the "Way Out West" exhibit, which explores Idaho's past from the Ice Age
+            to the present day.
             MUSEUM OF IDAHO
-            
-            The Warhawk Air Museum in Nampa is dedicated to preserving military aviation history. Its collection includes aircraft from various eras, such as the Curtiss P-40E Kittyhawk and the North American P-51C Mustang. 
+
+            The Warhawk Air Museum in Nampa is dedicated to preserving military aviation history. Its collection
+            includes aircraft from various eras, such as the Curtiss P-40E Kittyhawk and the North American P-51C
+            Mustang.
+          </p>
+          <a href="#" class="learn-more" onclick="toggleDetails(event, 'details2')">Learn More</a>
+          <div id="details2" class="details" style="display: none;">
+            <p>The Central Idaho Historical Museum in McCall focuses on preserving the region's heritage. Current
+              projects include the restoration of historic log structures, with support from the Idaho Heritage Trust.
+              CHILDRENS INST. FOR HISTORIC PRES.
+
+              The Museum of North Idaho in Coeur d'Alene is planning a significant expansion to accommodate its growing
+              collection and better serve the community. The project has received substantial pledges, including
+              $700,000 from ignite cda.
+              MUSEUM NI
+
+              The Idaho Heritage Trust provides grants and technical assistance to preservationists across the state,
+              ensuring that Idaho's cultural legacy is maintained for future generations.
+              IDAHO HERITAGE TRUST
+
+              These institutions and projects collectively contribute to preserving and showcasing Idaho's rich cultural
+              and historical heritage.
             </p>
-            <a href="#" class="learn-more" onclick="toggleDetails(event, 'details2')">Learn More</a>
-            <div id="details2" class="details" style="display: none;">
-              <p>The Central Idaho Historical Museum in McCall focuses on preserving the region's heritage. Current projects include the restoration of historic log structures, with support from the Idaho Heritage Trust. 
-                CHILDRENS INST. FOR HISTORIC PRES.
-                
-                The Museum of North Idaho in Coeur d'Alene is planning a significant expansion to accommodate its growing collection and better serve the community. The project has received substantial pledges, including $700,000 from ignite cda. 
-                MUSEUM NI
-                
-                The Idaho Heritage Trust provides grants and technical assistance to preservationists across the state, ensuring that Idaho's cultural legacy is maintained for future generations. 
-                IDAHO HERITAGE TRUST
-                
-                These institutions and projects collectively contribute to preserving and showcasing Idaho's rich cultural and historical heritage.
-              </p>
-            </div>
-              
-        <!-- Additional project cards -->
-      </div>
+          </div>
+
+          <!-- Additional project cards -->
+        </div>
     </section>
-    
+
     <section>
       <h2>Stay Updated with Our Events</h2>
       <p>Check back regularly to see upcoming events.</p>
     </section>
-  
+
     <section class="grid-container">
       <!-- Example Event Card -->
       <div class="card">
-        <img src="https://github.com/erospereira/Professional-Project-Department-Portfolio/blob/main/Janalee.jpg?raw=true" />
+        <img
+          src="https://github.com/erospereira/Professional-Project-Department-Portfolio/blob/main/Janalee.jpg?raw=true" />
         <div class="card-content">
           <h3>Title: Devotional - Janalee Meeker</h3>
           <p>Description: Join us for an interactive devotional.</p>
@@ -97,9 +127,10 @@
           <p>Time: 11:30 AM - 12:05 PM</p>
         </div>
       </div>
-  
+
       <div class="card">
-        <img src="https://github.com/erospereira/Professional-Project-Department-Portfolio/blob/main/Idaho%20Community.jpeg?raw=true" />
+        <img
+          src="https://github.com/erospereira/Professional-Project-Department-Portfolio/blob/main/Idaho%20Community.jpeg?raw=true" />
         <div class="card-content">
           <h3>Title: Data Science Seminar</h3>
           <p>Description: An informative seminar on data science trends and technologies.</p>
@@ -107,9 +138,10 @@
           <p>Time: 1:00 PM - 4:00 PM</p>
         </div>
       </div>
-  
+
       <div class="card">
-        <img src="https://github.com/erospereira/Professional-Project-Department-Portfolio/blob/main/BYU%20Idaho2.jpeg?raw=true" />
+        <img
+          src="https://github.com/erospereira/Professional-Project-Department-Portfolio/blob/main/BYU%20Idaho2.jpeg?raw=true" />
         <div class="card-content">
           <h3>Title: Networking Event</h3>
           <p>Description: Meet industry professionals and expand your network.</p>
@@ -173,7 +205,8 @@
         details.style.display = "none";
       }
     }
-    </script>
-     
+  </script>
+
 </body>
+
 </html>
