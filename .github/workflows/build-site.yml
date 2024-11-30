@@ -1,0 +1,58 @@
+name: Build and Deploy Site
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11.5'
+
+    - name: Install dependencies
+      run: |
+        pip install markdown
+
+    - name: List repository files
+      run: ls -R
+
+    - name: Debug categories directory
+      run: |
+        if [ -d "categories" ]; then
+          echo "Categories directory exists"
+          ls categories
+        else
+          echo "Categories directory does not exist"
+        fi
+
+    - name: Convert Markdown to HTML
+      run: |
+        mkdir -p _site/categories
+        for file in categories/*.md; do
+          output="_site/${file%.md}.html"
+          python -c "import markdown, sys; print(markdown.markdown(open(sys.argv[1]).read()))" "$file" > "$output"
+        done
+
+    - name: Debug _site directory
+      run: |
+        if [ -d "_site" ]; then
+          echo "_site directory exists"
+          ls _site
+        else
+          echo "_site directory does not exist"
+        fi
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: _site
