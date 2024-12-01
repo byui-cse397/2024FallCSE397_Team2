@@ -27,10 +27,21 @@ def modify_html_structure(html_file_path):
         for header in soup.find_all(['h2', 'h3']):
             header['class'] = header.get('class', []) + [f"project-header-{header.name}"]
         
-        # Remove any unnecessary wrapping divs
-        for li in soup.find_all('li'):
-            if li.div:
-                li.div.unwrap()
+        # Wrap sections of <h3> in a div
+        for h3 in main_content.find_all('h3'):
+            wrapper = soup.new_tag('div', **{'class': 'h3-section'})
+            current_element = h3
+            # Append the <h3> itself
+            wrapper.append(current_element.extract())
+            sibling = current_element.find_next_sibling()
+            while sibling and sibling.name != 'h3':
+                next_sibling = sibling.find_next_sibling()  # Save reference to the next sibling
+                wrapper.append(sibling.extract())  # Move sibling to the wrapper
+                sibling = next_sibling
+            if current_element.previous_element:
+                current_element.previous_element.insert_after(wrapper)
+            else:
+                main_content.insert(0, wrapper)
         
         # Handle media paths
         media_block = soup.find('ul', string=lambda text: text and ('Image Path' in text or 'Video Path' in text))
