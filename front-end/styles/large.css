@@ -34,10 +34,15 @@ header img {
     margin-right: 5vw;
 }
 
-
 /************************************************* Main Styles *************************************************/
 main{
     margin-top: 70px;
+}
+
+/************************************************ Footer Styles ************************************************/
+footer{
+    background-color: #006EB6;
+    height: 50px;
 }
 
 
@@ -113,12 +118,12 @@ main{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and box-shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project:hover {
-    transform: scale(1.05); /* Scale the project card slightly larger */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase the shadow on hover */
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .project-image {
@@ -134,6 +139,28 @@ main{
     justify-content: space-evenly;
 }
 
+
+
+
+
+.html-content {
+    background-color: #ffffff;
+    border: 1px solid #949598;
+    border-radius: 8px;
+    padding: 15px;
+    width: 300px;
+    height: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.html-content:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
 .project-title {
     font-size: 1.5em;
     color: #006EB6;
@@ -146,16 +173,61 @@ main{
     margin: 5px 0;
 }
 
+.project-year-major {
+    font-size: 1em;
+    color: #949598;
+    margin: 5px 0;
+    font-style: italic;
+}
+
 .project-description {
     font-size: 1em;
     color: #333;
 }
 
-
-
-
-/************************************************ Footer Styles ************************************************/
-footer{
-    background-color: #006EB6;
-    height: 50px;
-}
+.popup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    margin: 10px;
+  }
+  .popup-content {
+    background-color: white;
+    padding: 20px;
+    max-height: 90%;
+    border-radius: 10px;
+    position: relative;
+    overflow-y: auto;
+  }
+  .popup-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #f00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  .popup-title {
+    font-size: 24px;
+    margin-top: 0;
+  }
+  .popup-name,
+  .popup-year-major,
+  .popup-description {
+    margin: 10px 0;
+  }
+  .project-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
